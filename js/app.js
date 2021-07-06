@@ -5,14 +5,16 @@ alert("Welcome in This Website");
 let username = prompt("What is the user name?");
 alert('Hello,' + username + ', let\'s go to Start the Game');
 
+let score = 0;
 //First question
-let favcolor = prompt('The fav color for me red ,pls answer Yes or No?');
+let favcolor = prompt('The fav color for me red ,pls answer Yes/y or No/n?');
 favcolor = favcolor.toLowerCase();
-if (favcolor == 'yes') {
+if (favcolor === 'yes' || favcolor === 'y') {
     // console.log(favcolor);
     alert('That is Beautiful color ');
+    score++;
 }
-else if (favcolor == 'no') {
+else if (favcolor === 'no' || favcolor === 'n') {
     // console.log(favcolor);
     alert('oh, wrong answer');
 }
@@ -21,15 +23,16 @@ else {
 }
 
 //second question
-let favclub = prompt("Is my fav clube Madrid,yes or no?");
+let favclub = prompt("Is my fav clube Madrid,yes/y or no/n?");
 favclub = favclub.toLowerCase();
-if (favclub == 'yes') {
+if (favclub === 'yes' || favclub === 'y') {
     // console.log(favclub);
     alert('That is right');
+    score++;
 }
-else if (favclub == 'no') {
+else if (favclub === 'no' || favclub === 'n') {
     // console.log(favclub);
-     alert('oh, wrong answer');
+    alert('oh, wrong answer');
 }
 else {
     alert('pls answer the Q by yes/no');
@@ -37,16 +40,19 @@ else {
 
 
 //Third question
-let Fruit = prompt('Is My fav Fruit Oranges ,yes or no?');
+let Fruit = prompt('Is My fav Fruit Oranges ,yes/y or no/n?');
 Fruit = Fruit.toLowerCase();
 switch (Fruit) {
     case 'yes':
+    case 'y':
         console.log(Fruit);
-        alert('That is nice');
+        alert('wrong answer');
         break;
     case 'no':
+    case 'n':
         //console.log(Fruit);
         alert('yes ,your answer is correct');
+        score++;
         break;
 
     default:
@@ -57,10 +63,11 @@ switch (Fruit) {
 //fourth question
 let place = prompt('Is the fav place for me Paris?');
 place = place.toLowerCase();
-if (place == 'yes') {
+if (place === 'yes' || place === 'y') {
     //console.log(place);
     alert('That is right');
-} else if (place == 'no') {
+    score++;
+} else if (place === 'no' || place === 'n') {
     // console.log(place);
     alert('not correct');
 }
@@ -69,14 +76,15 @@ else {
 }
 
 //fifth question
-let bird = prompt('is a  bird  an animal?');
-bird = bird.toLowerCase();
-if (bird == 'yes') {
-    // console.log(bird);
+let car = prompt('Is my favorite car BMW?');
+car = car.toLowerCase();
+if (car === 'yes' || car === 'y') {
+    // console.log(car);
     alert('I know,hhhhh');
+    score++;
 
-} else if (bird == 'no') {
-    // console.log(bird);
+} else if (car === 'no' || car === 'n') {
+    // console.log(car);
     alert('you are kidding');
 
 }
@@ -84,5 +92,69 @@ else {
     alert('pls answer the Q by yes/no');
 }
 
+// //6 question
 
+let num = prompt("guess a number between 7 and 90");
+//console.log(typeof (num));
+num = parseInt(num);
+//number of attempts
+let attempts = 4;
+for (let i = 1; i <= attempts; i++) {
+    if (num > 7 && num < 90) {
+        alert("great jop, The number is true");
+        score++;
+        break;
+
+    }
+    else if (num < 7) {
+        alert("too low, guess again");
+        if (i == attempts) {
+            alert("you are out of attempts ");
+            break;
+        }
+        num = prompt("guess a number between 1 and 90");
+    }
+    else {
+        alert("too high, guess again");
+
+        if (i == attempts) {
+            alert("you are out of attempts ");
+            break;
+        }
+        num = prompt("guess a number between 1 and 90");
+    }
+
+}
+
+//7th question
+//array
+let course = ['c++', 'java', 'network', 'database', 'c#', 'android'];
+let courseName;
+console.log(courseName);
+for (let i = 1; i <= 6; i++) {
+     courseName = prompt("Name a course taught at University, You have 6 left");
+     courseName=courseName.toLowerCase();
+    for (let j = 0; j < course.length; j++) {
+
+        // console.log(course[j]);
+
+        if (courseName == course[j] ) {
+            alert("correct answer");
+            i=6;
+            score++; 
+        }
+        
+   
+    }
+    if(i!=6)
+    {
+        alert('pls try again');
+    }
+
+   
+}
+
+alert(`your Score: ${score}/7 `);
+console.log('The score :', score);
 alert('Thanks for playing' + username);
+
