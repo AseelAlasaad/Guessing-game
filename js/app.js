@@ -6,7 +6,7 @@ let username = prompt("What is the user name?");
 alert('Hello,' + username + ', let\'s go to Start the Game');
 
 //First question
-let favcolor = prompt('The fav color for you red ,pls answer Yes or No?');
+let favcolor = prompt('The fav color for me red ,pls answer Yes or No?');
 favcolor = favcolor.toLowerCase();
 if (favcolor == 'yes') {
     // console.log(favcolor);
@@ -14,39 +14,39 @@ if (favcolor == 'yes') {
 }
 else if (favcolor == 'no') {
     // console.log(favcolor);
-    alert('oh, I was think red');
+    alert('oh, wrong answer');
 }
 else {
     alert('you should answer by Yes or no');
 }
 
 //second question
-let isStudent = prompt("Are You Student,yes or no?");
-isStudent = isStudent.toLowerCase();
-if (isStudent == 'yes') {
-    // console.log(isStudent);
-    alert('Hello student');
+let favclub = prompt("Is my fav clube Madrid,yes or no?");
+favclub = favclub.toLowerCase();
+if (favclub == 'yes') {
+    // console.log(favclub);
+    alert('That is right');
 }
-else if (isStudent == 'no') {
-    // console.log(isStudent);
-    alert('OK');
+else if (favclub == 'no') {
+    // console.log(favclub);
+     alert('oh, wrong answer');
 }
 else {
-    alert('No problem');
+    alert('pls answer the Q by yes/no');
 }
 
 
 //Third question
-let feeling = prompt('Are You Feeling Happy ,yes or no?');
-feeling = feeling.toLowerCase();
-switch (feeling) {
+let Fruit = prompt('Is My fav Fruit Oranges ,yes or no?');
+Fruit = Fruit.toLowerCase();
+switch (Fruit) {
     case 'yes':
-        console.log(feeling);
+        console.log(Fruit);
         alert('That is nice');
         break;
     case 'no':
-        //console.log(feeling);
-        alert('i hope you feel better');
+        //console.log(Fruit);
+        alert('yes ,your answer is correct');
         break;
 
     default:
@@ -55,14 +55,14 @@ switch (feeling) {
 
 }
 //fourth question
-let place = prompt('the fav place for you Paris?');
+let place = prompt('Is the fav place for me Paris?');
 place = place.toLowerCase();
 if (place == 'yes') {
     //console.log(place);
-    alert('That is nice place');
+    alert('That is right');
 } else if (place == 'no') {
     // console.log(place);
-    alert('no problem');
+    alert('not correct');
 }
 else {
     alert('pls answer the Q by yes/no');
@@ -81,7 +81,7 @@ if (bird == 'yes') {
 
 }
 else {
-    alert('please review your info.');
+    alert('pls answer the Q by yes/no');
 }
 
 
