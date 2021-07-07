@@ -73,7 +73,8 @@ switch (Fruit) {
 
 question3();
 
-//fourth question
+function question4(){
+    //fourth question
 let place = prompt('Is the fav place for me Paris?');
 place = place.toLowerCase();
 if (place === 'yes' || place === 'y') {
@@ -87,6 +88,9 @@ if (place === 'yes' || place === 'y') {
 else {
     alert('pls answer the Q by yes/no');
 }
+}
+question4();
+
 
 //fifth question
 let car = prompt('Is my favorite car BMW?');
