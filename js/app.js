@@ -91,8 +91,9 @@ else {
 }
 question4();
 
+function question5(){
 
-//fifth question
+    //fifth question
 let car = prompt('Is my favorite car BMW?');
 car = car.toLowerCase();
 if (car === 'yes' || car === 'y') {
@@ -109,6 +110,8 @@ else {
     alert('pls answer the Q by yes/no');
 }
 
+}
+question5();
 // //6 question
 
 let num ='';
