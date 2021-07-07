@@ -6,39 +6,48 @@ let username = prompt("What is the user name?");
 alert('Hello,' + username + ', let\'s go to Start the Game');
 
 let score = 0;
-//First question
+
+function qustion1(){
+    //First question
 let favcolor = prompt('The fav color for me red ,pls answer Yes/y or No/n?');
 favcolor = favcolor.toLowerCase();
-if (favcolor === 'yes' || favcolor === 'y') {
-    // console.log(favcolor);
-    alert('That is Beautiful color ');
-    score++;
-}
-else if (favcolor === 'no' || favcolor === 'n') {
-    // console.log(favcolor);
-    alert('oh, wrong answer');
-}
-else {
-    alert('you should answer by Yes or no');
-}
+    if (favcolor === 'yes' || favcolor === 'y') {
+        // console.log(favcolor);
+        alert('That is Beautiful color ');
+        score++;
+    }
+    else if (favcolor === 'no' || favcolor === 'n') {
+        // console.log(favcolor);
+        alert('oh, wrong answer');
+    }
+    else {
+        alert('you should answer by Yes or no');
+    }
 
-//second question
-let favclub = prompt("Is my fav clube Madrid,yes/y or no/n?");
-favclub = favclub.toLowerCase();
-if (favclub === 'yes' || favclub === 'y') {
-    // console.log(favclub);
-    alert('That is right');
-    score++;
 }
-else if (favclub === 'no' || favclub === 'n') {
-    // console.log(favclub);
-    alert('oh, wrong answer');
-}
-else {
-    alert('pls answer the Q by yes/no');
-}
+qustion1();
 
 
+function question2(){
+    //second question
+    let favclub = prompt("Is my fav clube Madrid,yes/y or no/n?");
+    favclub = favclub.toLowerCase();
+    if (favclub === 'yes' || favclub === 'y') {
+        // console.log(favclub);
+        alert('That is right');
+        score++;
+    }
+    else if (favclub === 'no' || favclub === 'n') {
+        // console.log(favclub);
+        alert('oh, wrong answer');
+    }
+    else {
+        alert('pls answer the Q by yes/no');
+    }
+}
+question2();
+
+function question3(){
 //Third question
 let Fruit = prompt('Is My fav Fruit Oranges ,yes/y or no/n?');
 Fruit = Fruit.toLowerCase();
@@ -60,7 +69,12 @@ switch (Fruit) {
         break;
 
 }
-//fourth question
+}
+
+question3();
+
+function question4(){
+    //fourth question
 let place = prompt('Is the fav place for me Paris?');
 place = place.toLowerCase();
 if (place === 'yes' || place === 'y') {
@@ -74,8 +88,12 @@ if (place === 'yes' || place === 'y') {
 else {
     alert('pls answer the Q by yes/no');
 }
+}
+question4();
 
-//fifth question
+function question5(){
+
+    //fifth question
 let car = prompt('Is my favorite car BMW?');
 car = car.toLowerCase();
 if (car === 'yes' || car === 'y') {
@@ -92,7 +110,11 @@ else {
     alert('pls answer the Q by yes/no');
 }
 
-// //6 question
+}
+question5();
+function question6(){
+
+    // //6 question
 
 let num ='';
 //console.log(typeof (num));
@@ -122,8 +144,12 @@ for (let i = 1; i <= 4; i++) {
    
 
 }
+}
 
-//7th question
+question6();
+
+function question7(){
+    //7th question
 //array
 let course = ['c++', 'java', 'network', 'database', 'c#', 'android'];
 let courseName='';
@@ -150,6 +176,8 @@ for (let i = 1; i <= 6; i++) {
 
    
 }
+}
+question7();
 
 alert(`your Score: ${score}/7 `);
 console.log('The score :', score);
