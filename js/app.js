@@ -112,6 +112,7 @@ else {
 
 }
 question5();
+
 function question6(){
 
     // //6 question
@@ -144,6 +145,8 @@ for (let i = 1; i <= 4; i++) {
    
 
 }
+alert('the correct  answer is 6');
+console.log(correctNum);
 }
 
 question6();
@@ -163,7 +166,7 @@ for (let i = 1; i <= 6; i++) {
 
         if (courseName == course[j] ) {
             alert("correct answer");
-            i=6;
+            i=7;
             score++; 
         }
         
@@ -173,6 +176,10 @@ for (let i = 1; i <= 6; i++) {
     {
         alert('pls try again');
     }
+    if (i==6){
+        alert("the right answer is : 'c++', 'java', 'network', 'database', 'c#', 'android' ") ;
+    }
+    console.log(courseName);
 
    
 }
