@@ -147,7 +147,9 @@ for (let i = 1; i <= 4; i++) {
 }
 
 question6();
-//7th question
+
+function question7(){
+    //7th question
 //array
 let course = ['c++', 'java', 'network', 'database', 'c#', 'android'];
 let courseName='';
@@ -174,6 +176,8 @@ for (let i = 1; i <= 6; i++) {
 
    
 }
+}
+question7();
 
 alert(`your Score: ${score}/7 `);
 console.log('The score :', score);
