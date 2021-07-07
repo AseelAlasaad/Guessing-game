@@ -9,18 +9,22 @@ let score = 0;
 //First question
 let favcolor = prompt('The fav color for me red ,pls answer Yes/y or No/n?');
 favcolor = favcolor.toLowerCase();
-if (favcolor === 'yes' || favcolor === 'y') {
-    // console.log(favcolor);
-    alert('That is Beautiful color ');
-    score++;
+function qustion1(){
+    if (favcolor === 'yes' || favcolor === 'y') {
+        // console.log(favcolor);
+        alert('That is Beautiful color ');
+        score++;
+    }
+    else if (favcolor === 'no' || favcolor === 'n') {
+        // console.log(favcolor);
+        alert('oh, wrong answer');
+    }
+    else {
+        alert('you should answer by Yes or no');
+    }
+
 }
-else if (favcolor === 'no' || favcolor === 'n') {
-    // console.log(favcolor);
-    alert('oh, wrong answer');
-}
-else {
-    alert('you should answer by Yes or no');
-}
+qustion1();
 
 //second question
 let favclub = prompt("Is my fav clube Madrid,yes/y or no/n?");
