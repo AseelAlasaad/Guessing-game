@@ -112,7 +112,9 @@ else {
 
 }
 question5();
-// //6 question
+function question6(){
+
+    // //6 question
 
 let num ='';
 //console.log(typeof (num));
@@ -142,7 +144,9 @@ for (let i = 1; i <= 4; i++) {
    
 
 }
+}
 
+question6();
 //7th question
 //array
 let course = ['c++', 'java', 'network', 'database', 'c#', 'android'];
