@@ -47,7 +47,7 @@ function question2(){
 }
 question2();
 
-
+function question3(){
 //Third question
 let Fruit = prompt('Is My fav Fruit Oranges ,yes/y or no/n?');
 Fruit = Fruit.toLowerCase();
@@ -69,6 +69,10 @@ switch (Fruit) {
         break;
 
 }
+}
+
+question3();
+
 //fourth question
 let place = prompt('Is the fav place for me Paris?');
 place = place.toLowerCase();
