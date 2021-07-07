@@ -6,10 +6,11 @@ let username = prompt("What is the user name?");
 alert('Hello,' + username + ', let\'s go to Start the Game');
 
 let score = 0;
-//First question
+
+function qustion1(){
+    //First question
 let favcolor = prompt('The fav color for me red ,pls answer Yes/y or No/n?');
 favcolor = favcolor.toLowerCase();
-function qustion1(){
     if (favcolor === 'yes' || favcolor === 'y') {
         // console.log(favcolor);
         alert('That is Beautiful color ');
@@ -26,21 +27,25 @@ function qustion1(){
 }
 qustion1();
 
-//second question
-let favclub = prompt("Is my fav clube Madrid,yes/y or no/n?");
-favclub = favclub.toLowerCase();
-if (favclub === 'yes' || favclub === 'y') {
-    // console.log(favclub);
-    alert('That is right');
-    score++;
+
+function question2(){
+    //second question
+    let favclub = prompt("Is my fav clube Madrid,yes/y or no/n?");
+    favclub = favclub.toLowerCase();
+    if (favclub === 'yes' || favclub === 'y') {
+        // console.log(favclub);
+        alert('That is right');
+        score++;
+    }
+    else if (favclub === 'no' || favclub === 'n') {
+        // console.log(favclub);
+        alert('oh, wrong answer');
+    }
+    else {
+        alert('pls answer the Q by yes/no');
+    }
 }
-else if (favclub === 'no' || favclub === 'n') {
-    // console.log(favclub);
-    alert('oh, wrong answer');
-}
-else {
-    alert('pls answer the Q by yes/no');
-}
+question2();
 
 
 //Third question
