@@ -94,42 +94,39 @@ else {
 
 // //6 question
 
-let num = prompt("guess a number between 7 and 90");
+let num ='';
 //console.log(typeof (num));
-num = parseInt(num);
-//number of attempts
-let attempts = 4;
-for (let i = 1; i <= attempts; i++) {
-    if (num > 7 && num < 90) {
+
+//number of attempts 4
+let correctNum=6;
+for (let i = 1; i <= 4; i++) {
+    num=prompt("guess a number between 7 and 90");
+    num = parseInt(num);
+    if (num === correctNum) {
         alert("great jop, The number is true");
         score++;
         break;
 
     }
-    else if (num < 7) {
+    else if (num < correctNum) {
         alert("too low, guess again");
-        if (i == attempts) {
-            alert("you are out of attempts ");
-            break;
-        }
-        num = prompt("guess a number between 1 and 90");
+     
     }
-    else {
+    else if (num>correctNum) {
         alert("too high, guess again");
-
-        if (i == attempts) {
-            alert("you are out of attempts ");
-            break;
-        }
-        num = prompt("guess a number between 1 and 90");
     }
+    else{
+
+        alert("please write a number ");
+    }
+   
 
 }
 
 //7th question
 //array
 let course = ['c++', 'java', 'network', 'database', 'c#', 'android'];
-let courseName;
+let courseName='';
 console.log(courseName);
 for (let i = 1; i <= 6; i++) {
      courseName = prompt("Name a course taught at University, You have 6 left");
