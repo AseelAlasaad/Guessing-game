@@ -1,23 +1,23 @@
 'use strict';
 alert("Welcome in This Website");
 
-// Your name
+
 let username = prompt("What is the user name?");
 alert('Hello,' + username + ', let\'s go to Start the Game');
 
 let score = 0;
 
 function qustion1(){
-    //First question
+   
 let favcolor = prompt('The fav color for me red ,pls answer Yes/y or No/n?');
 favcolor = favcolor.toLowerCase();
     if (favcolor === 'yes' || favcolor === 'y') {
-        // console.log(favcolor);
+        
         alert('That is Beautiful color ');
         score++;
     }
     else if (favcolor === 'no' || favcolor === 'n') {
-        // console.log(favcolor);
+       
         alert('oh, wrong answer');
     }
     else {
@@ -29,16 +29,16 @@ qustion1();
 
 
 function question2(){
-    //second question
+    
     let favclub = prompt("Is my fav clube Madrid,yes/y or no/n?");
     favclub = favclub.toLowerCase();
     if (favclub === 'yes' || favclub === 'y') {
-        // console.log(favclub);
+        
         alert('That is right');
         score++;
     }
     else if (favclub === 'no' || favclub === 'n') {
-        // console.log(favclub);
+       
         alert('oh, wrong answer');
     }
     else {
@@ -48,18 +48,18 @@ function question2(){
 question2();
 
 function question3(){
-//Third question
+
 let Fruit = prompt('Is My fav Fruit Oranges ,yes/y or no/n?');
 Fruit = Fruit.toLowerCase();
 switch (Fruit) {
     case 'yes':
     case 'y':
-        console.log(Fruit);
+        
         alert('wrong answer');
         break;
     case 'no':
     case 'n':
-        //console.log(Fruit);
+        
         alert('yes ,your answer is correct');
         score++;
         break;
@@ -74,15 +74,15 @@ switch (Fruit) {
 question3();
 
 function question4(){
-    //fourth question
+  
 let place = prompt('Is the fav place for me Paris?');
 place = place.toLowerCase();
 if (place === 'yes' || place === 'y') {
-    //console.log(place);
+    
     alert('That is right');
     score++;
 } else if (place === 'no' || place === 'n') {
-    // console.log(place);
+    
     alert('not correct');
 }
 else {
@@ -91,18 +91,18 @@ else {
 }
 question4();
 
+
 function question5(){
 
-    //fifth question
 let car = prompt('Is my favorite car BMW?');
 car = car.toLowerCase();
 if (car === 'yes' || car === 'y') {
-    // console.log(car);
+    
     alert('I know,hhhhh');
     score++;
 
 } else if (car === 'no' || car === 'n') {
-    // console.log(car);
+    
     alert('you are kidding');
 
 }
@@ -115,12 +115,11 @@ question5();
 
 function question6(){
 
-    // //6 question
+   
 
 let num ='';
-//console.log(typeof (num));
 
-//number of attempts 4
+
 let correctNum=6;
 for (let i = 1; i <= 4; i++) {
     num=prompt("guess a number between 7 and 90");
@@ -146,23 +145,22 @@ for (let i = 1; i <= 4; i++) {
 
 }
 alert('the correct  answer is 6');
-console.log(correctNum);
+
 }
 
 question6();
 
+
 function question7(){
-    //7th question
-//array
+     
 let course = ['c++', 'java', 'network', 'database', 'c#', 'android'];
 let courseName='';
-console.log(courseName);
 for (let i = 1; i <= 6; i++) {
      courseName = prompt("Name a course taught at University, You have 6 left");
      courseName=courseName.toLowerCase();
     for (let j = 0; j < course.length; j++) {
 
-        // console.log(course[j]);
+       
 
         if (courseName == course[j] ) {
             alert("correct answer");
@@ -179,7 +177,7 @@ for (let i = 1; i <= 6; i++) {
     if (i==6){
         alert("the right answer is : 'c++', 'java', 'network', 'database', 'c#', 'android' ") ;
     }
-    console.log(courseName);
+    
 
    
 }
@@ -187,6 +185,5 @@ for (let i = 1; i <= 6; i++) {
 question7();
 
 alert(`your Score: ${score}/7 `);
-console.log('The score :', score);
 alert('Thanks for playing' + username);
 

@@ -1,3 +1,16 @@
+
+body {
+	font-family: arial;
+	background-color: rgb(185,179,175);
+	position: sticky;
+}
+header{
+
+	background-color:lightslategrey;
+	padding: 10px;
+	position: sticky;
+	top: 0;
+}
 h1{
 	margin: 80;
     padding: 90;
@@ -6,5 +19,56 @@ h1{
 	font-size: 180%;
     height: 50px;
 	font:bold;
-	color: lightseagreen;
+	color: rgb(255,255,255);
+	font-family: 'Oswald', sans-serif;
+}
+
+
+.first{
+	
+	border: 1px solid #665544;
+	background-color: #efefef;
+	padding: inherit;}
+
+#one{
+	border: 1px solid #080808;
+	text-align: center;
+	background-color:rgb(163, 168, 168);
+	padding:10px ;
+	height: 50%;
+	width: 50%;
+
+}	
+#firsth2{
+	text-align: center;
+}
+#two{
+	border: 1px solid #080808;
+	background-color:rgb(183, 187, 187);
+	padding:10px ;
+	height: 50%;
+	width: 50%;
+}	
+#three{
+	border: 1px solid #080808;
+	background-color:rgb(193, 197, 197);
+	padding:10px ;
+	height: 50%;
+	width: 50%;
+}
+
+#four{
+	border: 1px solid #080808;
+	background-color:rgb(185, 190, 190);
+	padding:10px ;
+	height: 50%;
+	width: 50%;
+}
+
+#five{
+	border:1px solid #080808;
+	background-color:rgb(181, 189, 189);
+	padding:10px ;
+	height: 50%;
+	width: 50%;
 }
