@@ -28,7 +28,9 @@ h1{
 	
 	border: 1px solid #665544;
 	background-color: #efefef;
-	padding: inherit;}
+	padding: inherit;
+    
+}
 
 #one{
 	border: 1px solid #080808;
@@ -39,17 +41,23 @@ h1{
 	width: 50%;
 
 }	
+
+
 #firsth2{
 	text-align: center;
 }
-#two{
+
+#two
+{
 	border: 1px solid #080808;
 	background-color:rgb(183, 187, 187);
 	padding:10px ;
 	height: 50%;
 	width: 50%;
 }	
-#three{
+
+#three
+{
 	border: 1px solid #080808;
 	background-color:rgb(193, 197, 197);
 	padding:10px ;
